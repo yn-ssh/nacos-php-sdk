@@ -1,0 +1,22 @@
+{
+  "name": "ssh/nacos-php-sdk",
+  "description": "Nacos2.5 PHP SDK for configuration management and service discovery",
+  "type": "library",
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "ssh",
+      "email": "694711507@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nacos\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
