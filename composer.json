@@ -3,7 +3,7 @@
   "description": "Nacos2.5 PHP SDK for configuration management and service discovery",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "authors": [
     {
       "name": "ssh",
@@ -11,7 +11,9 @@
     }
   ],
   "require": {
-    "php": ">=7.4"
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "ext-json": "*"
   },
   "autoload": {
     "psr-4": {
