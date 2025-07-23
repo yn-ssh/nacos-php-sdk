@@ -20,5 +20,10 @@
       "Nacos\\": "src/"
     }
   },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0.0-dev"
+    }
+  },
   "minimum-stability": "stable"
 }
