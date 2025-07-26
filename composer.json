@@ -14,8 +14,8 @@
     "php": ">=7.4",
     "ext-curl": "*",
     "ext-json": "*",
-    "webman/redis": "dev-main",
-    "illuminate/events": "10.x-dev"
+    "webman/redis": "^2.1",
+    "illuminate/events": "^10.48"
   },
   "autoload": {
     "psr-4": {
