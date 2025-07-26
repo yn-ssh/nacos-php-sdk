@@ -10,7 +10,7 @@
 
 ```php
 <?php
-use Nacos\NacosClient;
+use ssh\Nacos\NacosClient;
 
 // 初始化 Nacos 客户端
 $client = new NacosClient(
