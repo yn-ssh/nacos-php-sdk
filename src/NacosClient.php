@@ -5,7 +5,7 @@
  * @Date 2025/5/30 13:04
  * @Description
  */
-namespace Nacos;
+namespace ssh\Nacos;
 
 use Exception;
 

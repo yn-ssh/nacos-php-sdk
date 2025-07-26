@@ -6,7 +6,7 @@
  * @Description nacos 进程
  */
 
-namespace Nacos;
+namespace ssh\Nacos;
 use support\Log;
 use support\Redis;
 use Workerman\Timer;
