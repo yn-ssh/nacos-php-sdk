@@ -22,7 +22,9 @@ class Nacos
     private $serviceName;
     private $serverPort;
 
-    public function __construct($host,$namespace,$group,$accessKey,$secretKey,$serviceName,$serverPort)
+    private $serverIP;
+
+    public function __construct($host,$namespace,$group,$accessKey,$secretKey,$serviceName,$serverIP,$serverPort)
     {
         $this->host = $host;
         $this->namespace = $namespace;
@@ -30,7 +32,9 @@ class Nacos
         $this->accessKey = $accessKey;
         $this->secretKey = $secretKey;
         $this->serviceName = $serviceName;
+        $this->serverIP = $serverIP;
         $this->serverPort = $serverPort;
+
     }
 
     public function onWorkerStart(): void
@@ -42,7 +46,7 @@ class Nacos
         $namespaceId=$this->namespace;
         $groupName=$this->group;
         //取当前IP
-        $ip = gethostbyname(gethostname());
+        $ip = $this->serverIP;
         $port=$this->serverPort;
         $client = new NacosClient(
             $nacosServer, // nacos 服务器地址
