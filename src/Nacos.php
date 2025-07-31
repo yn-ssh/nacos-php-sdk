@@ -19,19 +19,19 @@ class Nacos
     private $group;
     private $accessKey;
     private $secretKey;
-    private $serviceName;
+    private $serverName;
     private $serverPort;
 
     private $serverIP;
 
-    public function __construct($host,$namespace,$group,$accessKey,$secretKey,$serviceName,$serverIP,$serverPort)
+    public function __construct($host,$namespace,$group,$accessKey,$secretKey,$serverName,$serverIP,$serverPort)
     {
         $this->host = $host;
         $this->namespace = $namespace;
         $this->group = $group;
         $this->accessKey = $accessKey;
         $this->secretKey = $secretKey;
-        $this->serviceName = $serviceName;
+        $this->serverName = $serverName;
         $this->serverIP = $serverIP;
         $this->serverPort = $serverPort;
 
@@ -42,7 +42,7 @@ class Nacos
         $nacosServer=$this->host;
         $accessKey=$this->accessKey;
         $secretKey=$this->secretKey;
-        $serverName=$this->serviceName;
+        $serverName=$this->serverName;
         $namespaceId=$this->namespace;
         $groupName=$this->group;
         //取当前IP
