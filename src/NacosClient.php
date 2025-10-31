@@ -202,13 +202,13 @@ class NacosClient {
      * 发布配置
      * @param string $dataId 配置ID
      * @param string $content 配置内容
-     * @param string|null $type 配置类型，如properties、json、xml等，默认为空
+     * @param string $type 配置类型，如properties、json、xml等，默认为空
      * @param string $group 配置分组，默认为DEFAULT_GROUP
-     * @param string|null $namespaceId 命名空间ID，默认为构造函数中设置的值
+     * @param string $namespaceId 命名空间ID，默认为构造函数中设置的值
      * @return bool 是否发布成功
      * @throws Exception 如果请求失败
      */
-    public function publishConfig(string $dataId, string $content, string $type = null, string $group = '',string $namespaceId = ''): bool
+    public function publishConfig(string $dataId, string $content, string $type = '', string $group = '',string $namespaceId = ''): bool
     {
         $namespaceId = $namespaceId ?: $this->namespaceId;
         $group = $group ?: $this->group;
