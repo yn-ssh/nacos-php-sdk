@@ -13,9 +13,7 @@
   "require": {
     "php": ">=7.4",
     "ext-curl": "*",
-    "ext-json": "*",
-    "webman/redis": "^2.1",
-    "illuminate/events": "^10.48"
+    "ext-json": "*"
   },
   "autoload": {
     "psr-4": {
